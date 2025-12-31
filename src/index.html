@@ -185,12 +185,13 @@
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
-                                <table class="table table-hover table-lg">
+                                <table class="table">
                                     <thead>
                                         <tr>
-                                            <th>Name</th>
-                                            <th>Comment</th>
-                                        </tr>
+                                       <th>Name</th>
+                                       <th>Role</th>
+                                      <th>Status</th>
+                                      </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
@@ -206,46 +207,7 @@
                                                 <p class=" mb-0">Congratulations on your graduation!</p>
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <td class="col-3">
-                                                <div class="d-flex align-items-center">
-                                                    <div class="avatar avatar-md">
-                                                        <img src="assets/static/images/faces/2.jpg">
-                                                    </div>
-                                                    <p class="font-bold ms-3 mb-0">Si Ganteng</p>
-                                                </div>
-                                            </td>
-                                            <td class="col-auto">
-                                                <p class=" mb-0">Wow amazing design! Can you make another tutorial for
-                                                    this design?</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="col-3">
-                                                <div class="d-flex align-items-center">
-                                                    <div class="avatar avatar-md">
-                                                        <img src="assets/static/images/faces/8.jpg">
-                                                    </div>
-                                                    <p class="font-bold ms-3 mb-0">Singh Eknoor</p>
-                                                </div>
-                                            </td>
-                                            <td class="col-auto">
-                                                <p class=" mb-0">What a stunning design! You are so talented and creative!</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="col-3">
-                                                <div class="d-flex align-items-center">
-                                                    <div class="avatar avatar-md">
-                                                        <img src="assets/static/images/faces/3.jpg">
-                                                    </div>
-                                                    <p class="font-bold ms-3 mb-0">Rani Jhadav</p>
-                                                </div>
-                                            </td>
-                                            <td class="col-auto">
-                                                <p class=" mb-0">I love your design! It’s so beautiful and unique! How did you learn to do this?</p>
-                                            </td>
-                                        </tr>
+                                        <tbody id="userTable"></tbody>
                                     </tbody>
                                 </table>
                             </div>
@@ -317,6 +279,10 @@
     </section>
 </div>
 {% endblock %}
+<script src="assets/extensions/apexcharts/apexcharts.min.js"></script>
+<script src="assets/static/js/pages/dashboard.js"></script>
+<script src="/src/js/data.js"></script>
+
 {% block js %}
 <!-- Need: Apexcharts -->
 <script src="assets/extensions/apexcharts/apexcharts.min.js"></script>

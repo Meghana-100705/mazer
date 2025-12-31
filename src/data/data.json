@@ -1,0 +1,11 @@
+{
+  "stats": [
+    { "title": "Users", "value": 1240 },
+    { "title": "Orders", "value": 320 },
+    { "title": "Revenue", "value": "₹45,000" }
+  ],
+  "users": [
+    { "name": "Meghana", "role": "Admin", "status": "Active" },
+    { "name": "Arjun", "role": "Editor", "status": "Inactive" }
+  ]
+}
